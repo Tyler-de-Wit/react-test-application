@@ -1,3 +1,25 @@
+:root {
+  --primary-blue: #4A90E2;
+  --secondary-green: #50E3C2;
+  --background: #F7F9FC;
+  --text: #1F2933;
+  --secondary-text: #6B7280;
+  --hint-text: #9CA3AF;
+  --white: #FFFFFF;
+  --black: #000000;
+  --red: #FF0000;
+}
+
+* {
+  /* margin: 0; */
+  /* padding: 0; */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: var(--background);
+}
+
 @keyframes fadeInScale {
   0% {
     opacity: 0;
@@ -16,8 +38,17 @@
   }
 }
 
+.App {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 80vw;
+  width: 100%;
+}
+
 .animatedSection {
-  color: blue;
+  color: var(--primary-blue);
   background-color: lightgray;
   padding: 10px;
   border-radius: 5px;
@@ -27,14 +58,26 @@
 }
 
 .componentButtons {
-  margin: 0 auto;
   max-width: 80vw;
-  background-color: #b7ebbe;
+  background-color: var(--secondary-green);
   padding: 0.5rem;
+  border-radius: 8px 8px 0px 0px;
+
+  display: flex;
+  justify-content: center;
+
+  button {
+    font-size: 1rem;
+
+    &:hover {
+      cursor: pointer;
+      opacity: 80%;
+    }
+  }
 }
 
 .componentArea {
-  background-color: #b7e3eb;
+  background-color: var(--primary-blue);
   padding: 1.5rem;
-  border-radius: 8px;
+  border-radius: 0px 0px 8px 8px;
 }

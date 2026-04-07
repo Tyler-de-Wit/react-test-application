@@ -37,36 +37,38 @@ function App() {
 
   return (
     <>
-      <div className="componentButtons">
-        <button
-          onClick={handleDateInputComponent}
-          style={showComponentButtonStyle}
-        >
-          {dateIsVisible ? "Hide Date Component" : "Show Date Component"}
-        </button>
-        <button
-          onClick={handleStyledComponent}
-          style={showComponentButtonStyle}
-        >
-          {styleIsVisible ? "Hide Styled Component" : "Show Styled Component"}
-        </button>
-        <button
-          onClick={handleSculptureComponent}
-          style={showComponentButtonStyle}
-        >
-          {sculptureIsVisible
-            ? "Hide Sculpture Component"
-            : "Show Sculpture Component"}
-        </button>
-      </div>
-      <div className="componentArea">
-        {dateIsVisible && (
-          <DateInputComponent newDate={date} onDateChange={setDate} />
-        )}
-        {styleIsVisible && (
-          <StyledComponent message="This is a styled section with animation" />
-        )}
-        {sculptureIsVisible && <SculptureListComponent />}
+      <div className="App">
+        <div className="componentButtons">
+          <button
+            onClick={handleDateInputComponent}
+            style={showComponentButtonStyle}
+          >
+            {dateIsVisible ? "Hide Date Component" : "Show Date Component"}
+          </button>
+          <button
+            onClick={handleStyledComponent}
+            style={showComponentButtonStyle}
+          >
+            {styleIsVisible ? "Hide Styled Component" : "Show Styled Component"}
+          </button>
+          <button
+            onClick={handleSculptureComponent}
+            style={showComponentButtonStyle}
+          >
+            {sculptureIsVisible
+              ? "Hide Sculpture Component"
+              : "Show Sculpture Component"}
+          </button>
+        </div>
+        <div className="componentArea">
+          {dateIsVisible && (
+            <DateInputComponent newDate={date} onDateChange={setDate} />
+          )}
+          {styleIsVisible && (
+            <StyledComponent message="This is a styled section with animation" />
+          )}
+          {sculptureIsVisible && <SculptureListComponent />}
+        </div>
       </div>
     </>
   );
