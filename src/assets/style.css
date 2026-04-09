@@ -38,14 +38,14 @@ body {
   }
 }
 
-.App {
+/* .App {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   max-width: 80vw;
   width: 100%;
-}
+} */
 
 .animatedSection {
   color: var(--primary-blue);
@@ -58,7 +58,7 @@ body {
 }
 
 .componentButtons {
-  max-width: 80vw;
+  /* max-width: 80vw; */
   background-color: var(--secondary-green);
   padding: 0.5rem;
   border-radius: 8px 8px 0px 0px;

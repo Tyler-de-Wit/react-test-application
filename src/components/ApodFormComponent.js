@@ -18,7 +18,6 @@ const ApodFormComponent = ({ fetchApodData }) => {
     if (thumbs) parameters.thumbs = thumbs;
 
     fetchApodData(parameters);
-    console.log(parameters);
   };
 
   return (
